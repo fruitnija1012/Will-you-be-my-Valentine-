@@ -70,7 +70,7 @@ const messages = [
     "IM BEGGING PLEASEEEE SAY YESSSSS!!",
     "please? :3",
     "AGHGHGHGHGHGHGHG WHYYYYYYYY?!?!",
-    'PLEASE POOKIE YOU DONT MEAN IT PLEASEEE!!",
+    "PLEASE POOKIE YOU DONT MEAN IT PLEASEEE!!",
     "say yes? :3"
 ];
 
