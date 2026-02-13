@@ -63,7 +63,15 @@ const messages = [
     "I will be very sad...",
     "I will be very very very sad...",
     "Ok fine, I will stop asking...",
-    "Just kidding, say yes please! ❤️"
+    "Just kidding, say yes please! ❤️",
+    "PLEASEEEEEE OH PLEASEEE!!",
+    "SAY YES PLEASEEEEE",
+    "PRETTY PRETTY PLEASEEEEE!!",
+    "IM BEGGING PLEASEEEE SAY YESSSSS!!",
+    "please? :3",
+    "AGHGHGHGHGHGHGHG WHYYYYYYYY?!?!",
+    'PLEASE POOKIE YOU DONT MEAN IT PLEASEEE!!",
+    "say yes? :3"
 ];
 
 let messageIndex = 0;
