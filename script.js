@@ -86,5 +86,22 @@ function handleNoClick() {
 }
 
 function handleYesClick() {
-    window.location.href = "yes_page.html";
+    const yay = new Audio("yay.mp3");
+    const song = new Audio("pyrite.mp3");
+
+    song.volume = 0.6; // optional volume adjustment
+
+    // Play yay first
+    yay.play().catch(() => {});
+
+    // When yay finishes, play the main song
+    yay.addEventListener("ended", () => {
+        song.play().catch(() => {});
+    });
+
+    // Redirect after short delay
+    setTimeout(() => {
+        window.location.href = "yes_page.html";
+    }, 500);
 }
+
