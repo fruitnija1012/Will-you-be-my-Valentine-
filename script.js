@@ -88,7 +88,7 @@ function handleNoClick() {
 function handleYesClick() {
     const yay = new Audio("yay.mp3");
 
-    // Tell the yes page to start pyrite
+    // Tell the yes page to start Pyrite
     sessionStorage.setItem("startPyrite", "true");
 
     // Play yay (this is user-initiated, so iPhone allows it)
