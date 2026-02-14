@@ -13,5 +13,27 @@
             <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmo3c3l5ODh3ZGN6NHhhaDE2Mjg1ZjkwOXczdDFxbWM3dTBtaW9zaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/9XY4f3FgFTT4QlaYqa/giphy.gif">
         </div>
     </div>
+    
+<audio id="pyrite" src="pyrite.mp3" preload="auto" loop></audio>
+
+<script>
+  const pyrite = document.getElementById("pyrite");
+
+  async function playPyrite() {
+    try {
+      await pyrite.play();
+    } catch (e) {
+      // Autoplay can be blocked; first tap will start it
+    }
+  }
+
+  if (sessionStorage.getItem("startPyrite") === "true") {
+    sessionStorage.removeItem("startPyrite");
+    window.addEventListener("load", playPyrite);
+  }
+
+  document.addEventListener("click", playPyrite, { once: true });
+</script>
+
 </body>
 </html>
