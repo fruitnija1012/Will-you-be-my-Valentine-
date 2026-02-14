@@ -87,21 +87,21 @@ function handleNoClick() {
 
 function handleYesClick() {
     const yay = new Audio("yay.mp3");
-    const song = new Audio("pyrite.mp3");
 
-    song.volume = 0.6; // optional volume adjustment
+    // Tell the yes page to start pyrite
+    sessionStorage.setItem("startPyrite", "true");
 
-    // Play yay first
+    // Play yay (this is user-initiated, so iPhone allows it)
     yay.play().catch(() => {});
 
-    // When yay finishes, play the main song
+    // After yay finishes, go to yes page
     yay.addEventListener("ended", () => {
-        song.play().catch(() => {});
+        window.location.href = "yes_page.html";
     });
 
-    // Redirect after short delay
+    // Backup: still redirect even if 'ended' doesn't fire
     setTimeout(() => {
         window.location.href = "yes_page.html";
-    }, 500);
+    }, 6000);
 }
 
