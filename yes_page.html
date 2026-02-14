@@ -13,24 +13,5 @@
             <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmo3c3l5ODh3ZGN6NHhhaDE2Mjg1ZjkwOXczdDFxbWM3dTBtaW9zaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/9XY4f3FgFTT4QlaYqa/giphy.gif">
         </div>
     </div>
-    
-<audio id="bg-music" src="yay.mp3"></audio>
-
-<script>
-  const music = document.getElementById("bg-music");
-
-  function playMusic() {
-    music.play().catch(() => {
-      console.log("Autoplay blocked.");
-    });
-  }
-
-  // Try autoplay when page loads
-  window.addEventListener("load", playMusic);
-
-  // Guarantee it plays on first tap anywhere
-  document.addEventListener("click", playMusic, { once: true });
-</script>
-
 </body>
 </html>
